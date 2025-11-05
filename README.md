@@ -13,7 +13,7 @@ The code for table one is in rscript file "TableOne.R", and the code which produ
 figure one is in rscript file "Figure1.R".
 
 ### Starting Clean
-Utilize the makefile by typing "make clean" in the Rstudio terminal to remove all of
+- Utilize the makefile by typing "make clean" in the Rstudio terminal to remove all of
 the generated files
 
 
