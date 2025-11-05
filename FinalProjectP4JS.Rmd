@@ -1,0 +1,59 @@
+---
+title: "Final Project Part 2: Draft of Data Analysis"
+author: "Jacob Shtulman"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  production: TRUE
+---
+```{r, package loading, include=!params$production}
+library(here)
+library(knitr)
+library(dplyr)
+library(haven)
+library(openxlsx)
+library(gtsummary)
+```
+
+```{r, setting up global parameters, echo = FALSE, eval = params$production}
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE
+)
+```
+
+```{r, setting root dir, include=!params$production}
+here::i_am("FinalProjectP4JS.Rmd")
+```
+
+```{r, loading data}
+# This chunk would have been used to load data, but I have modularized the code in this
+# report, so data loading has been executed elsewhere. 
+# To fulfill rubric, I have included the code I would have otherwise placed here
+# as a comment: data <- read.xlsx(here::here("Raw Data/GA_Seatbelt_Survey_Adult_Final.xlsx"), # sheet = 1)
+```
+### Introduction
+
+The NHTSA mandates that all 50 U.S. states conduct an annual observational survey to monitor seat belt use rates. The Injury Prevention Research Center at Emory University has administered this survey in Georgia in accordance with NHTSA guidelines since 2022. Observers are sent out to 400 sites across 20 counties to collect information on driver and passenger belt status, ethnicity, age, type of driver distraction, rear seat occupant belt use for minors(<18 yrs of age), and vehicle type from each qualified automobile that passes. Dual axle vehicles are excluded from observation. Additional variables include time of observations, day of the week, weather conditions, and road type (local, arterial, and limited access highway). 
+
+The goal of this analysis is to use the recently released Georgia seat belt survey 2023 data set to create descriptive statistics about seat belt use rates by sex, vehicle type, ethnicity, rurality, age, and road type. We also seek to examine the relationship belt use and weather conditions while controlling for age, sex, vehicle type, rurality, road type, ethnicity, time of day, and visibility. 
+
+### Descriptive Statistics
+##### Table 1: Seat Belt Use Rates by Sex, Vehicle Type, Ethnicity, Rurality, Age, and Road Type
+
+```{r, tableone}
+
+table_one <- readRDS(here::here("Tables_Figures", "table_one.RDS"))
+table_one
+
+```
+
+##### Figure 1: Proportion of Vehicle Occupants Using Seat Belts by Weather Condition
+```{r, figure1}
+Figure1 <- readRDS(here::here("Tables_Figures", "Seatbelt_Weather_Figure.RDS"))
+Figure1
+```
+
+
+
+
+

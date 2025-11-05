@@ -4,7 +4,7 @@ library(Hmisc)
 
 here::i_am("Code/Figure1.R")
 
-Clean_Data_Figure <- readRDS(here::here("Clean Data", "Clean_Data.RDS"))
+Clean_Data_Figure <- readRDS(here::here("Clean_Data", "Clean_Data.RDS"))
 
 Fig1 <- ggplot(Clean_Data_Figure, aes(
   x = Weather_Conditions,
@@ -16,4 +16,4 @@ Fig1 <- ggplot(Clean_Data_Figure, aes(
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-saveRDS(Fig1, here::here("Tables & Figures/Seatbelt_Weather_Figure.rds"))
+saveRDS(Fig1, here::here("Tables_Figures/Seatbelt_Weather_Figure.rds"))

@@ -5,7 +5,7 @@ library(dplyr)
 
 here::i_am("Code/TableOne.R")
 
-clean_data <- readRDS(here::here("Clean Data", "Clean_Data.RDS"))
+clean_data <- readRDS(here::here("Clean_Data", "Clean_Data.RDS"))
 
 table_one <- clean_data %>%
   select(Seat_Belt_Status, Driver_Sex, Vehicle_Type, Race_Ethnicity, Age_Reduced, Type) %>%
@@ -22,4 +22,4 @@ table_one <- clean_data %>%
   as_gt()
 table_one
 
-saveRDS(table_one, here::here("Tables & Figures/table_one.RDS"))
+saveRDS(table_one, here::here("Tables_Figures/table_one.RDS"))
