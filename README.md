@@ -12,5 +12,12 @@ occupants by weather condition.
 The code for table one is in rscript file "TableOne.R", and the code which produces 
 figure one is in rscript file "Figure1.R".
 
+### Starting Clean
+Utilize the makefile by typing "make clean" in the Rstudio terminal to remove all of
+the generated files
+
+
+
+
 
 
