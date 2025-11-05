@@ -1,4 +1,4 @@
-## Welcome to my Final Project! This project analyzes Georgia's 2023 Seat Belt Survey Data for adults.
+## Welcome to my Final Project! This project analyzes Georgia's 2023 Seat Belt Survey data for adults.
 
 ### How to build the report and what to expect
 - In order to produce the final report, use the provided makefile by typing "make" in the 
@@ -14,7 +14,7 @@ figure one is in rscript file "Figure1.R".
 
 ### Starting Clean
 - Utilize the makefile by typing "make clean" in the Rstudio terminal to remove all of
-the generated files
+the generated files.
 
 
 
