@@ -1,5 +1,15 @@
 ## Welcome to my Final Project! This project analyzes Georgia's 2023 Seat Belt Survey data for adults.
 
+### Starting Clean
+- Utilize the makefile by typing "make clean" in the Rstudio terminal to remove all of
+the generated files.
+
+### Synchronize the Packge Environment
+- Nobody likes missing packages! Synchronize your package repository automatically by navigating
+to your terminal, making sure it's working in the project directory, and using the command "make install".
+This will install renv (if not already installed), and restore the packages in the lockfile to your 
+project library.
+
 ### How to build the report and what to expect
 - In order to produce the final report, use the provided makefile by typing "make" in the 
 RStudio terminal and the report will automatically build. The report should contain an 
@@ -12,9 +22,7 @@ occupants by weather condition.
 The code for table one is in rscript file "TableOne.R", and the code which produces 
 figure one is in rscript file "Figure1.R".
 
-### Starting Clean
-- Utilize the makefile by typing "make clean" in the Rstudio terminal to remove all of
-the generated files.
+
 
 
 

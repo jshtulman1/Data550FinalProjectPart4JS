@@ -21,3 +21,7 @@ clean:
 	      FinalProjectP4JS.html
 
 .PHONY: all clean
+
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
