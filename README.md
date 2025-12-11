@@ -27,8 +27,10 @@ figure one is in rscript file "Figure1.R".
 
 ### How to create the report using Docker
 - To create the report using Docker, ensure that you have Docker installed and the desktop
-application running on your computer. If you have done so, generate the report by running
-"make Final\ Report/FinalProjectP4JS.html" in the terminal
+application running on your computer. After you've set your working directory as the root directory
+of the project, generate the report by running "make Final\ Report/FinalProjectP4JS.html" in bash.
+You'll be able locate the report inside of the "Final Project" folder. 
+
 
 
 
