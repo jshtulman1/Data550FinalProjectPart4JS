@@ -19,16 +19,18 @@ project_image:
 	docker tag jshtulman1/finalproject:latest project_image
 	touch project_image
 
-.PHONY: report
-report: project_image
+# Report to build report automatically in container
+
+Final\ Report/FinalProjectP4JS.html: project_image
 	@mkdir -p "Final Report"
-	docker run -v "$$(pwd)/Final\ Report":/final_report project_image
+	docker run --rm -v "$$(pwd)/Final Report":/final_report project_image
 
 clean:
 	rm -f Clean_Data/Clean_Data.RDS \
 	      Tables_Figures/table_one.RDS \
 	      Tables_Figures/Seatbelt_Weather_Figure.RDS \
-	      FinalProjectP4JS.html 
+	      FinalProjectP4JS.html\
+	      project_image
 	rm -rf "Final Report"
 	      
 .PHONY: all clean
