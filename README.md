@@ -23,7 +23,9 @@ The code for table one is in rscript file "TableOne.R", and the code which produ
 figure one is in rscript file "Figure1.R".
 
 ### How to build the docker image
-- To build the docker image, simply execute "docker build -t project_image ." in the terminal
+- To build the docker image, ensure that you have Docker installed and the desktop
+application running on your computer. After you've set your working directory as the root directory
+of the project, execute "docker build -t project_image ." in the terminal.
 
 ### How to create the report using Docker
 - To create the report using Docker, ensure that you have Docker installed and the desktop
