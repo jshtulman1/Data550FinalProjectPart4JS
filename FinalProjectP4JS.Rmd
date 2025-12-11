@@ -1,5 +1,5 @@
 ---
-title: "Final Project: RENV"
+title: "Final Project"
 author: "Jacob Shtulman"
 date: "`r Sys.Date()`"
 output: html_document
@@ -49,7 +49,7 @@ table_one
 
 ##### Figure 1: Proportion of Vehicle Occupants Using Seat Belts by Weather Condition
 ```{r, figure1}
-Figure1 <- readRDS(here::here("Tables_Figures", "Seatbelt_Weather_Figure.RDS"))
+Figure1 <- readRDS(here::here("Tables_Figures", "Seatbelt_Weather_Figure.rds"))
 Figure1
 ```
 

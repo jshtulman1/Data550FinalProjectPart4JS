@@ -22,6 +22,13 @@ occupants by weather condition.
 The code for table one is in rscript file "TableOne.R", and the code which produces 
 figure one is in rscript file "Figure1.R".
 
+### How to build the docker image
+- To build the docker image, simply execute "docker build -t project_image ." in the terminal
+
+### How to create the report using Docker
+- To create the report using Docker, ensure that you have Docker installed and the desktop
+application running on your computer. If you have done so, generate the report by running
+"make report" in the terminal
 
 
 
